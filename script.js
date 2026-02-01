@@ -9,7 +9,7 @@ function handleNo() {
         // İlk kez "yoo" diyince
         hayiraBasildiMi = true;
         questionText.innerText = "Tekrar düşünmek ister misin aşkımm? 🥺";
-        displayImg.src = "images/fotohayir1.jpg";
+        displayImg.src = "images/fotohayir1.png";
     } else {
         // İkinci "yoo"da buton kaçmaya başlar
         noButton.style.position = "absolute";
@@ -27,7 +27,7 @@ function handleYes() {
     const buttons = document.querySelector(".buttons");
 
     buttons.style.display = "none"; 
-    displayImg.src = "images/fotokutlama.jpg";
+    displayImg.src = "images/fotokutlama.png";
 
     if (hayiraBasildiMi) {
         // Önce hayır (yoo) deyip sonra evet dediyse
