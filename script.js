@@ -1,18 +1,17 @@
 let hayiraBasildiMi = false;
 
+// Sayfa yüklendiğinde resimleri önceden tanıtalım
 function handleNo() {
     const noButton = document.getElementById("no-button");
     const questionText = document.getElementById("question");
     const displayImg = document.getElementById("display-image");
 
     if (!hayiraBasildiMi) {
-        // İlk "yoo" diyince
         hayiraBasildiMi = true;
         questionText.innerText = "Tekrar düşünmek ister misin aşkımm? 🥺";
-        // .png uzantısına dikkat!
-        displayImg.src = "images/fotohayir1.png"; 
+        // Sonuna eklediğimiz ?v=1 kısmı tarayıcıyı tazelemeye zorlar
+        displayImg.src = "images/fotohayir1.png?v=1"; 
     } else {
-        // İkinci "yoo"da kaçış başlar
         noButton.style.position = "absolute";
         const x = Math.random() * (window.innerWidth - noButton.offsetWidth);
         const y = Math.random() * (window.innerHeight - noButton.offsetHeight);
@@ -27,9 +26,8 @@ function handleYes() {
     const msgText = document.getElementById("message-text");
     const buttons = document.querySelector(".buttons");
 
-    buttons.style.display = "none"; 
-    // .png uzantısına dikkat!
-    displayImg.src = "images/fotokutlama.png"; 
+    if (buttons) buttons.style.display = "none"; 
+    displayImg.src = "images/fotokutlama.png?v=1"; 
 
     if (hayiraBasildiMi) {
         questionText.innerText = "Hic tereddüt etmeyeceğini biliyordum!";
