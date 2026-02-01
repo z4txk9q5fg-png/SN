@@ -4,21 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Sürprizzz</title>
+    <title>Sana Bir Sorum Var!</title>
 </head>
-
 <body>
     <div class="container">
-        <div class="Mainprompt">
-            <img class="image" src="images/catflower.jpg" alt="Kedi">
-            
-            <h1 class="hh" id="name">Selam Fıstık!</h1>
-            <p class="pp" id="question">Bu 14 Şubatta Kız arkadaşım olur musun?</p>
+        <div id="main-content">
+            <img id="display-image" src="images/fotokarsilama.jpg" alt="Resim">
+            <h1 id="question">Acaba bu sene sevgilim olur musunn?</h1>
             
             <div class="buttons">
-                <button id="no-button" onclick="showMessage('No')">Yo</button>
-                <button id="yesButton" onclick="showMessage('Yes')">EVETTTT</button>
+                <button id="yes-button" onclick="handleYes()">EVETTTTTT</button>
+                <button id="no-button" onclick="handleNo()">yoo</button>
             </div>
+            
+            <p id="message-text"></p>
         </div>
     </div>
     <script src="script.js"></script>
