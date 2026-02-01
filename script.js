@@ -6,12 +6,13 @@ function handleNo() {
     const displayImg = document.getElementById("display-image");
 
     if (!hayiraBasildiMi) {
-        // İlk kez "yoo" diyince
+        // İlk "yoo" diyince
         hayiraBasildiMi = true;
         questionText.innerText = "Tekrar düşünmek ister misin aşkımm? 🥺";
-        displayImg.src = "images/fotohayir1.png";
+        // .png uzantısına dikkat!
+        displayImg.src = "images/fotohayir1.png"; 
     } else {
-        // İkinci "yoo"da buton kaçmaya başlar
+        // İkinci "yoo"da kaçış başlar
         noButton.style.position = "absolute";
         const x = Math.random() * (window.innerWidth - noButton.offsetWidth);
         const y = Math.random() * (window.innerHeight - noButton.offsetHeight);
@@ -27,14 +28,13 @@ function handleYes() {
     const buttons = document.querySelector(".buttons");
 
     buttons.style.display = "none"; 
-    displayImg.src = "images/fotokutlama.png";
+    // .png uzantısına dikkat!
+    displayImg.src = "images/fotokutlama.png"; 
 
     if (hayiraBasildiMi) {
-        // Önce hayır (yoo) deyip sonra evet dediyse
         questionText.innerText = "Hic tereddüt etmeyeceğini biliyordum!";
         msgText.innerText = "Sana çok aşığım aşkımmm! ❤️";
     } else {
-        // Direkt evet dediyse
         questionText.innerText = "Seni çok seviyorummm bebeğimmm!";
         msgText.innerText = "Sana ben çok aşığım... ❤️";
     }
