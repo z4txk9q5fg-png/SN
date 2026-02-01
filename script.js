@@ -10,7 +10,7 @@ function handleNo() {
         hayiraBasildiMi = true;
         questionText.innerText = "Tekrar düşünmek ister misin aşkımm? 🥺";
         // Sonuna eklediğimiz ?v=1 kısmı tarayıcıyı tazelemeye zorlar
-        displayImg.src = "images/fotohayir1.png?v=1"; 
+        displayImg.src = "images/fotohayir1.png"; 
     } else {
         noButton.style.position = "absolute";
         const x = Math.random() * (window.innerWidth - noButton.offsetWidth);
@@ -27,7 +27,7 @@ function handleYes() {
     const buttons = document.querySelector(".buttons");
 
     if (buttons) buttons.style.display = "none"; 
-    displayImg.src = "images/fotokutlama.png?v=1"; 
+    displayImg.src = "images/fotokutlama.png"; 
 
     if (hayiraBasildiMi) {
         questionText.innerText = "Hic tereddüt etmeyeceğini biliyordum!";
