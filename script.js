@@ -31,9 +31,9 @@ function handleYes() {
 
     if (hayiraBasildiMi) {
         questionText.innerText = "Hic tereddüt etmeyeceğini biliyordum!";
-        msgText.innerText = "Sana çok aşığım aşkımmm! ❤️";
+        msgText.innerText = "Sana çok aşığım CANIMM! ❤️";
     } else {
-        questionText.innerText = "Seni çok seviyorummm bebeğimmm!";
+        questionText.innerText = "Seni çok seviyorum bebeğim!";
         msgText.innerText = "Sana ben çok aşığım... ❤️";
     }
 }
