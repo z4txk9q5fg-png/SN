@@ -1,6 +1,5 @@
 let hayiraBasildiMi = false;
 
-// Sayfa yüklendiğinde resimleri önceden tanıtalım
 function handleNo() {
     const noButton = document.getElementById("no-button");
     const questionText = document.getElementById("question");
@@ -9,8 +8,8 @@ function handleNo() {
     if (!hayiraBasildiMi) {
         hayiraBasildiMi = true;
         questionText.innerText = "Tekrar düşünmek ister misin aşkımm? 🥺";
-        // Sonuna eklediğimiz ?v=1 kısmı tarayıcıyı tazelemeye zorlar
-        displayImg.src = "images/fotohayir1.png"; 
+        // Direkt dosya adı
+        displayImg.src = "fotohayir1.png"; 
     } else {
         noButton.style.position = "absolute";
         const x = Math.random() * (window.innerWidth - noButton.offsetWidth);
@@ -27,7 +26,8 @@ function handleYes() {
     const buttons = document.querySelector(".buttons");
 
     if (buttons) buttons.style.display = "none"; 
-    displayImg.src = "images/fotokutlama.png"; 
+    // Direkt dosya adı
+    displayImg.src = "fotokutlama.png"; 
 
     if (hayiraBasildiMi) {
         questionText.innerText = "Hic tereddüt etmeyeceğini biliyordum!";
